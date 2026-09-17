@@ -40,9 +40,9 @@ void loop() {
 
     while (get_distance() < 5) {
         count++;
-        Serial.println(String(count) + " Objects Detected");
         delay(100);
     }
+    Serial.println(String(count) + " Objects Detected");
     count = 0;
     Serial.println("Detected Object Is Gone");
 }
